@@ -119,7 +119,7 @@ export function RegisterRoutes(app: Router) {
             const args: Record<string, TsoaRoute.ParameterSchema> = {
                     page: {"default":1,"in":"query","name":"page","dataType":"double"},
                     limit: {"default":10,"in":"query","name":"limit","dataType":"double"},
-                    price: {"in":"query","name":"price","dataType":"double"},
+                    price: {"in":"query","name":"price","dataType":"union","subSchemas":[{"dataType":"enum","enums":["asc"]},{"dataType":"enum","enums":["desc"]}]},
                     productName: {"in":"query","name":"productName","dataType":"union","subSchemas":[{"dataType":"enum","enums":["asc"]},{"dataType":"enum","enums":["desc"]}]},
                     category: {"in":"query","name":"category","dataType":"string"},
             };

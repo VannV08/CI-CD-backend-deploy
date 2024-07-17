@@ -13,9 +13,11 @@
     "start": "concurrently \"yarn workspace ms-ui-components watch\" \"yarn workspace frontend-client dev\" \"yarn workspace frontend-dashboard dev\" \"yarn workspace user-service dev\"",
     "start:client": "concurrently \"yarn workspace ms-ui-components watch\" \"yarn workspace frontend-client dev\"",
     "start:dashboard": "concurrently \"yarn workspace ms-ui-components watch\" \"yarn workspace frontend-dashboard dev\"",
-    "start:user-service": "yarn workspace user-service dev"
+    "start:user-service": "yarn workspace user-service dev",
+    "test": "jest"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0"
   }
 }

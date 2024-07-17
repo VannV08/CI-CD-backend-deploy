@@ -176,7 +176,7 @@
 		"securitySchemes": {}
 	},
 	"info": {
-		"title": "user-service",
+		"title": "product-service",
 		"version": "1.0.0",
 		"license": {
 			"name": "MIT"
