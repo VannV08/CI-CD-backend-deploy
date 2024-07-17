@@ -95,3 +95,7 @@ yarn.lock
 node_modules
 
 build
+
+scripts
+
+.github
